@@ -40,7 +40,4 @@ Cree un repositorio en su cuenta de github, y en él resuelva los siguientes eje
    *****
      ***
       *
-
-# Solución 
-
-1. 
+ 

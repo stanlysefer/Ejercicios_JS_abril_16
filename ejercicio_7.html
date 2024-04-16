@@ -10,25 +10,18 @@
         let nota1, nota2, nota3;
         do {
             nota1 = parseFloat(prompt("Introduce la primera nota:"));
-        } while (isNaN(nota1));
-
-        do {
             nota2 = parseFloat(prompt("Introduce la segunda nota:"));
-        } while (isNaN(nota2));
-
-        do {
             nota3 = parseFloat(prompt("Introduce la tercera nota:"));
-        } while (isNaN(nota3));
+        } while (isNaN(nota1) || isNaN(nota2) || isNaN(nota3));
 
         const media = (nota1 + nota2 + nota3) / 3;
-        let mensaje;
-        if (media < 3) {
-            mensaje = "Reprobado";
+        let estado;
+        if (media >= 3) {
+            estado = "Aprobado";
         } else {
-            mensaje = "Aprobado";
+            estado = "Reprobado";
         }
-        alert(`Nota media: ${media.toFixed(2)} - ${mensaje}`);
-
+        alert(`La media de las notas es: ${media.toFixed(2)} - ${estado}`);
     </script>
 </body>
 </html>
