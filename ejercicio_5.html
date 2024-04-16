@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1, num2;
+        do {
+            num1 = parseFloat(prompt("Introduce el primer número:"));
+        } while (isNaN(num1));
+
+        do {
+            num2 = parseFloat(prompt("Introduce el segundo número:"));
+        } while (isNaN(num2));
+
+        const suma = num1 + num2;
+        alert(`La suma de ${num1} y ${num2} es ${suma}`);
+
+    </script>
+</body>
+</html>
